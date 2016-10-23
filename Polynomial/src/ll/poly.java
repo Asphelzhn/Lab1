@@ -11,7 +11,7 @@ import java.util.regex.*;
 //寤虹珛涓�涓瀯閫犲櫒鍒濆鍖栧彉閲�
 class Polynomial {
     private String poly;
-    // It is somewhat confusing to have a field name matching the declaring class name
+    //It is somewhat confusing to have a field name matching the declaring class name
     //publicMethodCommentRequirement  Required
     public Boolean expression(String parameter)
     //Avoid variables with short names like s
