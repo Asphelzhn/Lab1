@@ -233,7 +233,7 @@ class poly {
 //			System.out.println(newStr2);
 //    		
 //    }
-    private void calculatesome(String equation)
+    private String calculatesome(String equation)
     {
     	Pattern item = Pattern.compile("(\\d\\*)+\\d");
     	Matcher matcherItem = item.matcher(equation);
@@ -248,6 +248,7 @@ class poly {
     		matcherItem = item.matcher(equation);
     	}
     	System.out.println(equation);
+    	return equation;
     }
     private int calculate(String equation)//如果多项式都可以简化为数字时
     {
@@ -266,13 +267,15 @@ class poly {
     	return sum;
     }
     
-    public void derivation(String variable)
+    public String derivation(String variable)
     {
+    	polynomial="x*x+2*3*4*x*y+x+x*x*num";
+//    	polynomial=arrytostring(polynomial);
     	Pattern judge = Pattern.compile(variable);
     	Matcher matcherjudge= judge.matcher(polynomial);
     	if(!matcherjudge.find())
     	{
-    		System.out.println("Error, no variable");
+    		return "Error, no variable";
     	}
     	else
     	{
@@ -313,7 +316,7 @@ class poly {
     		j++;
     	}
     	newStr = newStr.substring(0, newStr.length() - 1);
-    	calculatesome(newStr);
+    	return calculatesome(newStr);
     	}
     }
     public static void main(String[] args){
