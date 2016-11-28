@@ -1,4 +1,4 @@
-package Lab1;
+package Test;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class polyTest2 {
+import Lab1.Poly;
+
+public class polyTest7 {
 
 	@Before
 	public void setUp() throws Exception {
@@ -17,8 +19,8 @@ public class polyTest2 {
 	}
 
 	@Test
-	public void test() {
-		assertEquals("求导",new poly().expression("!d/dx"));
+	public void testExpression() {
+		assertEquals("非法输入",new Poly().expression("x*y      ^x*zz+2*3*z"));
 	}
 
 }

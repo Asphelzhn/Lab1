@@ -1,4 +1,4 @@
-package Lab1;
+package Test;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class polyTestw1 {
+import Lab1.Poly;
+
+public class polyTest3 {
 
 	@Before
 	public void setUp() throws Exception {
@@ -17,8 +19,8 @@ public class polyTestw1 {
 	}
 
 	@Test
-	public void testDerivation() {
-		assertEquals("2*x+24*y+x+2*x*num",new poly().derivation("x"));
+	public void testExpression() {
+		assertEquals("∑«∑® ‰»Î",new Poly().expression("x*y*z-z+2*3*z"));
 	}
 
 }
